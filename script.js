@@ -4,7 +4,7 @@ let result = document.getElementById("result")
 userInput.max = new Date().toISOString().split("T")[0];
 
 // Define the particular date you want to select
-var desiredDate = new Date('2024-03-24'); // Format: YYYY-MM-DD
+var desiredDate = new Date('2024-02-27'); // Format: YYYY-MM-DD
 
 // Set the minimum selectable date to the desired date
 userInput.min = desiredDate.toISOString().split("T")[0];
