@@ -53,7 +53,11 @@ function calculateAge()
         m3 = 11;
         y3--;
     }
-    result.innerHTML = `<span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days`
+    let parts = [];
+    if (y3 > 0) parts.push(`<span>${y3}</span> years`);
+    if (m3 > 0) parts.push(`<span>${m3}</span> months`);
+    if (d3 > 0) parts.push(`<span>${d3}</span> days`);
+    result.innerHTML = parts.join(", ");
 }
 
 function getDaysInMonth(year, month)
