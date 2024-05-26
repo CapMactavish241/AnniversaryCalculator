@@ -53,7 +53,7 @@ function calculateAge()
         m3 = 11;
         y3--;
     }
-    result.innerHTML = `Helena and Benedict Your Journey so Far is: <span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days`
+    result.innerHTML = `<span>${y3}</span> years, <span>${m3}</span> months and <span>${d3}</span> days`
 }
 
 function getDaysInMonth(year, month)
